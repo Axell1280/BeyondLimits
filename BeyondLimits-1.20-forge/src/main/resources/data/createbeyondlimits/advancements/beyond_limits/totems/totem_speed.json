@@ -1,0 +1,25 @@
+{
+  "parent": "createbeyondlimits:beyond_limits/totems/totem_regen",
+  "display": {
+    "icon": { "item": "createbeyondlimits:totem_speed" },
+    "title": { "text": "Swift Spirit" },
+    "description": { "text": "Find a Totem of Speed" },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "totem_speed": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["createbeyondlimits:totem_speed"]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["totem_speed"]]
+}

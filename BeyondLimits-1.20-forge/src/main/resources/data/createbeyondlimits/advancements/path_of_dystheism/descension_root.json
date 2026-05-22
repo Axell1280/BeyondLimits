@@ -1,0 +1,40 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:soul_sand"
+    },
+    "title": {
+      "text": "The Path of Descension",
+      "color": "dark_red",
+      "bold": true
+    },
+    "description": {
+      "text": "Sink into the abyss. Harness the heavy essence of the soul.",
+      "color": "white"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "createbeyondlimits:path_of_dystheism/p_root",
+  "criteria": {
+    "has_descension_item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "createbeyondlimits:fragrance_malice",
+              "createbeyondlimits:fragrance_cinder",
+              "createbeyondlimits:fragrance_bastion",
+              "createbeyondlimits:intensified_anchor"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 200
+  }
+}

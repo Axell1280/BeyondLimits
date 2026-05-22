@@ -1,0 +1,72 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "tag": "minecraft:stone_sources"
+  },
+  "transitionalItem": {
+    "item": "createbeyondlimits:incomplete_copper_piece"
+  },
+  "sequence": [
+    {
+      "type": "create:cutting",
+      "ingredients": [
+        {
+          "item": "createbeyondlimits:incomplete_copper_piece"
+        }
+      ],
+      "results": [
+        {
+          "item": "createbeyondlimits:incomplete_copper_piece"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createbeyondlimits:incomplete_copper_piece"
+        },
+        {
+          "item": "minecraft:iron_nugget"
+        }
+      ],
+      "results": [
+        {
+          "item": "createbeyondlimits:incomplete_copper_piece"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "createbeyondlimits:incomplete_copper_piece"
+        }
+      ],
+      "results": [
+        {
+          "item": "createbeyondlimits:incomplete_copper_piece"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:copper_ingot",
+      "count": 1,
+      "nbt": "{\"display\":{\"Name\":\"{\\\"text\\\":\\\"Processed Copper\\\"}\"}}",
+      "chance": 0.22
+    },
+    {
+      "item": "create:copper_nugget",
+      "count": 8,
+      "nbt": "{\"display\":{\"Name\":\"{\\\"text\\\":\\\"Processed Copper Piece\\\"}\"}}",
+      "chance": 0.53
+    },
+    {
+      "item": "minecraft:air",
+      "chance": 0.25
+    }
+  ],
+  "loops": 1
+}

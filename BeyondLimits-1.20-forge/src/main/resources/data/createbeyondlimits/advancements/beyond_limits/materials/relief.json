@@ -1,0 +1,32 @@
+{
+  "parent": "createbeyondlimits:beyond_limits/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:creeper_head"
+    },
+    "title": {
+      "text": "That's a relief",
+      "color": "green"
+    },
+    "description": {
+      "text": "Find a new source to get gunpowder",
+      "color": "gold"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "has_gunpowder": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:gunpowder",
+            "nbt": "{display:{Name:'{\"text\":\"Fabricated Gunpowder\"}'}}"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"render_type": "cutout",
+	"textures": {
+		"0": "createbeyondlimits:block/rosemary/rosemary_0",
+		"particle": "createbeyondlimits:block/rosemary/rosemary_0"
+	},
+	"elements": [
+		{
+			"from": [-1, -1, 8],
+			"to": [15, 15, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [4, 0, 8]},
+			"faces": {
+				"north": {"uv": [0.032, 0.032, 15.968, 15.968], "texture": "#0"},
+				"south": {"uv": [15.968, 0.032, 0.032, 15.968], "texture": "#0"}
+			}
+		},
+		{
+			"from": [8, -1, 1],
+			"to": [8, 15, 17],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 5]},
+			"faces": {
+				"east": {"uv": [15.968, 0.032, 0.032, 15.968], "texture": "#0"},
+				"west": {"uv": [0.032, 0.032, 15.968, 15.968], "texture": "#0"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "group",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [0, 1]
+		}
+	]
+}

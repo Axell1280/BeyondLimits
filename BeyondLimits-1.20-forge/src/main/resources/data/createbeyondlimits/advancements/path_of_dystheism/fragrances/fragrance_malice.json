@@ -1,0 +1,21 @@
+{
+  "parent": "createbeyondlimits:path_of_dystheism/descension_root",
+  "display": {
+    "icon": { "item": "createbeyondlimits:fragrance_malice" },
+    "title": { "text": "Whetstone of Grudges" },
+    "description": { "text": "Hone your malice until it cuts deeper than iron." },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "has_malice": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{ "items": ["createbeyondlimits:fragrance_malice"] }]
+      }
+    }
+  },
+  "requirements": [["has_malice"]]
+}

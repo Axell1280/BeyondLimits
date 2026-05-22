@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " A ",
+    "CBC",
+    "   "
+  ],
+  "key": {
+    "A": {
+      "item": "createbeyondlimits:wing"
+    },
+    "B": {
+      "item": "minecraft:dragon_breath"
+    },
+    "C": {
+      "item": "minecraft:string"
+    }
+  },
+  "result": {
+    "item": "createbeyondlimits:fabricated_elytra_piece"
+  }
+}

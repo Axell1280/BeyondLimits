@@ -1,0 +1,71 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "tag": "minecraft:stone_sources"
+  },
+  "sequence": [
+    {
+      "type": "create:cutting",
+      "processing_time": 50,
+      "ingredients": [
+        {
+          "item": "createbeyondlimits:incomplete_copper_piece"
+        }
+      ],
+      "results": [
+        {
+          "id": "createbeyondlimits:incomplete_copper_piece"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createbeyondlimits:incomplete_copper_piece"
+        },
+        {
+          "item": "minecraft:iron_nugget"
+        }
+      ],
+      "results": [
+        {
+          "id": "createbeyondlimits:incomplete_copper_piece"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "createbeyondlimits:incomplete_copper_piece"
+        }
+      ],
+      "results": [
+        {
+          "id": "createbeyondlimits:incomplete_copper_piece"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:copper_ingot",
+      "count": 1,
+      "chance": 0.22
+    },
+    {
+      "id": "create:copper_nugget",
+      "count": 8,
+      "chance": 0.53
+    },
+    {
+      "id": "minecraft:air",
+      "chance": 0.25
+    }
+  ],
+  "loops": 1,
+  "transitional_item": {
+    "id": "createbeyondlimits:incomplete_copper_piece"
+  }
+}

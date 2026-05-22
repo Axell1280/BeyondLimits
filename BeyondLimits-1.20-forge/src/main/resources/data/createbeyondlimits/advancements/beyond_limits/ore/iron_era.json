@@ -1,0 +1,33 @@
+{
+  "parent": "createbeyondlimits:beyond_limits/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:iron_ingot",
+      "nbt": "{display:{Name:'{\"text\":\"Extracted Iron\",\"italic\":false}'}}",
+      "color": "gray"
+    },
+    "title": {
+      "text": "Iron Era"
+    },
+    "description": {
+      "text": "Iron from earth."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "has_extracted_iron": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:iron_ingot",
+            "nbt": "{display:{Name:'{\"text\":\"Extracted Iron\",\"italic\":false}'}}"
+          }
+        ]
+      }
+    }
+  }
+}

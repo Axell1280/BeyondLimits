@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smoking",
+  "processingTime": 100,
+  "ingredients": [
+    {
+      "item": "minecraft:charcoal"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:coal",
+      "nbt": "{display:{Name:'{\"text\":\"Toasted Coal\"}'}}",
+      "count": 1
+    }
+  ]
+}

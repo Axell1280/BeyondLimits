@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "createbeyondlimits:item/signal_massage_music_disc"
+
+  }
+}

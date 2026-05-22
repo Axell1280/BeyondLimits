@@ -1,0 +1,11 @@
+{
+  "variants": {
+    "bites=0": { "model": "createbeyondlimits:block/blue_cheese_block_s0" },
+    "bites=1": { "model": "createbeyondlimits:block/blue_cheese_block_s1" },
+    "bites=2": { "model": "createbeyondlimits:block/blue_cheese_block_s2" },
+    "bites=3": { "model": "createbeyondlimits:block/blue_cheese_block_s3" },
+    "bites=4": { "model": "createbeyondlimits:block/blue_cheese_block_s4" },
+    "bites=5": { "model": "createbeyondlimits:block/blue_cheese_block_s5" },
+    "bites=6": { "model": "createbeyondlimits:block/blue_cheese_block_s6" }
+  }
+}

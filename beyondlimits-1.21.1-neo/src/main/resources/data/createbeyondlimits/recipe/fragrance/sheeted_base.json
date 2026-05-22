@@ -1,0 +1,17 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "create:iron_sheet"
+    },
+    {
+      "item": "create:iron_sheet"
+    }
+  ],
+  "keep_held_item": false,
+  "results": [
+    {
+      "id": "createbeyondlimits:sheeted_base"
+    }
+  ]
+}

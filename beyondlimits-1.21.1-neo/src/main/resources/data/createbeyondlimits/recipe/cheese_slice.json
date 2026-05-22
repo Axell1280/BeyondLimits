@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "createbeyondlimits:cheese_block"
+    }
+  ],
+  "result": {
+    "id": "createbeyondlimits:cheese_slice",
+    "count": 6
+  }
+}

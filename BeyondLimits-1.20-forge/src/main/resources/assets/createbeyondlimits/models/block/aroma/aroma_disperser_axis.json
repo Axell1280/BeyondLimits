@@ -1,0 +1,24 @@
+{
+  "parent": "block/block",
+	"textures": {
+		"1": "createbeyondlimits:block/aroma/axis",
+		"2": "createbeyondlimits:block/aroma/axis_top",
+		"particle": "createbeyondlimits:block/aroma/axis"
+	},
+	"elements": [
+		{
+			"name": "Axis",
+			"from": [6, -0.1, 6],
+			"to": [10, 9.1, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, -1, 0]},
+			"faces": {
+				"north": {"uv": [6, 7, 10, 16], "texture": "#1"},
+				"east": {"uv": [6, 7, 10, 16], "texture": "#1"},
+				"south": {"uv": [6, 7, 10, 16], "texture": "#1"},
+				"west": {"uv": [6, 7, 10, 16], "texture": "#1"},
+				"up": {"uv": [6, 6, 10, 10], "texture": "#2"},
+				"down": {"uv": [6, 6, 10, 10], "texture": "#2", "cullface": "down"}
+			}
+		}
+	]
+}

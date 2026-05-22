@@ -1,0 +1,14 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "minecraft:stone_sources"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:dirt",
+      "count": 1
+    }
+  ]
+}

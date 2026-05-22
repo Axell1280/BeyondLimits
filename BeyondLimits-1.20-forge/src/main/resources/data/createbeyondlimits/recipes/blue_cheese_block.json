@@ -1,0 +1,23 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "fluid": "minecraft:milk",
+      "amount": 1000
+    },
+    {
+      "item": "minecraft:bone_meal",
+      "count": 4
+    },
+    {
+      "item": "minecraft:sugar",
+      "count": 2
+    }
+  ],
+  "results": [
+    {
+      "item": "createbeyondlimits:blue_cheese_block"
+    }
+  ],
+  "heatRequirement": "heated"
+}

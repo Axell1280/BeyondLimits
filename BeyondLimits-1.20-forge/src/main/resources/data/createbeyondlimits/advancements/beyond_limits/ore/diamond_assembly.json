@@ -1,0 +1,33 @@
+{
+  "parent": "createbeyondlimits:beyond_limits/ore/toasted_coal",
+  "display": {
+    "icon": {
+      "item": "minecraft:diamond"
+    },
+    "title": {
+      "text": "Pressurised Fabrication",
+      "color": "aqua"
+    },
+    "description": {
+      "text": "Forge a diamond by pressurising carbon.",
+      "color": "gold"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "crafted_custom_diamond": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:diamond",
+            "nbt": "{display:{Name:'{\"text\":\"Compressed Gem\"}'}}"
+          }
+        ]
+      }
+    }
+  }
+}

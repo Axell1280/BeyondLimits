@@ -1,0 +1,65 @@
+{
+  "parent": "createbeyondlimits:beyond_limits/cheese/advancing_again",
+  "display": {
+    "icon": {
+      "item": "createbeyondlimits:blue_cheese_slice"
+    },
+    "title": {
+      "text": "What's that growling?",
+      "color": "red"
+    },
+    "description": {
+      "text": "You have to stop with the cheese, your intestinal system can't handle it anymore."
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "get_cheese_block": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{ "items": ["createbeyondlimits:cheese_block"] }]
+      }
+    },
+    "get_blue_cheese_block": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{ "items": ["createbeyondlimits:blue_cheese_block"] }]
+      }
+    },
+    "get_parmesan_cheese_block": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{ "items": ["createbeyondlimits:parmesan_cheese_block"] }]
+      }
+    },
+    "get_cheese_slice": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{ "items": ["createbeyondlimits:cheese_slice"] }]
+      }
+    },
+    "get_blue_cheese_slice": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{ "items": ["createbeyondlimits:blue_cheese_slice"] }]
+      }
+    },
+    "get_parmesan_slice": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{ "items": ["createbeyondlimits:parmesan_slice"] }]
+      }
+    }
+  },
+  "requirements": [
+    ["get_cheese_block"],
+    ["get_blue_cheese_block"],
+    ["get_parmesan_cheese_block"],
+    ["get_cheese_slice"],
+    ["get_blue_cheese_slice"],
+    ["get_parmesan_slice"]
+  ]
+}

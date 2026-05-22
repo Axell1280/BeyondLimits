@@ -1,0 +1,43 @@
+{
+  "parent": "block/block",
+	"textures": {
+		"0": "createbeyondlimits:block/aroma/beacon"
+	},
+	"elements": [
+		{
+			"from": [6.5, 11, 7.5],
+			"to": [9.5, 14, 8.5],
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [8, 13, 8]},
+			"faces": {
+				"north": {"uv": [5, 7, 11, 13], "texture": "#0"},
+				"east": {"uv": [5, 7, 7, 13], "texture": "#0"},
+				"south": {"uv": [5, 7, 11, 13], "texture": "#0"},
+				"west": {"uv": [7, 7, 9, 13], "texture": "#0"},
+				"up": {"uv": [5, 7, 7, 13], "rotation": 270, "texture": "#0"},
+				"down": {"uv": [5, 7, 7, 13], "rotation": 90, "texture": "#0"}
+			}
+		},
+		{
+			"from": [6.5, 11, 7.5],
+			"to": [9.5, 14, 8.5],
+			"rotation": {"angle": 22.5, "axis": "z", "origin": [8, 13, 8]},
+			"faces": {
+				"north": {"uv": [5, 7, 11, 13], "texture": "#0"},
+				"east": {"uv": [5, 7, 7, 13], "texture": "#0"},
+				"south": {"uv": [5, 7, 11, 13], "texture": "#0"},
+				"west": {"uv": [7, 7, 9, 13], "texture": "#0"},
+				"up": {"uv": [5, 7, 7, 13], "rotation": 270, "texture": "#0"},
+				"down": {"uv": [5, 7, 7, 13], "rotation": 90, "texture": "#0"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "group",
+			"origin": [8, 8, 8],
+			"scope": 0,
+			"color": 0,
+			"children": [0, 1]
+		}
+	]
+}

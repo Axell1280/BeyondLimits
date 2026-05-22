@@ -1,0 +1,35 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "fluid": "minecraft:lava",
+      "amount": 250
+    },
+    {
+      "tag": "minecraft:stone_sources"
+    },
+    {
+      "tag": "minecraft:stone_sources"
+    },
+    {
+      "tag": "minecraft:stone_sources"
+    },
+    {
+      "tag": "minecraft:stone_sources"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:iron_ingot",
+      "nbt": "{display:{Name:'{\"text\":\"Extracted Iron\",\"italic\":false}'}}",
+      "count": 2,
+      "chance": 40
+    },
+    {
+      "item": "minecraft:iron_nugget",
+      "count": 3,
+      "chance": 0.5
+    }
+  ],
+  "heatRequirement": "heated"
+}

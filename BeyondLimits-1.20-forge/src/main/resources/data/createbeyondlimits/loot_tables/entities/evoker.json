@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "createbeyondlimits:totem_speed",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "createbeyondlimits:totem_regen",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "createbeyondlimits:totem_strength",
+          "weight": 1
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.005
+        }
+      ]
+    }
+  ]
+}

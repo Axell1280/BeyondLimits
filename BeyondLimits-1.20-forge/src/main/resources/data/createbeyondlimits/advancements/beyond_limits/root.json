@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": { "item": "createbeyondlimits:beyond_limits" },
+    "title": {
+      "text": "Beyond The Limits",
+      "color": "aqua"
+    },
+    "description": {
+      "text": "Step into a world where imagination outpaces machinery. Harness the wonders of the Create mod — and push its brilliance beyond all known limits. Innovation awaits those who dare to tinker",
+      "color": "gold"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "background": "createbeyondlimits:textures/gui/advancements/backgrounds/root.png"
+  },
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

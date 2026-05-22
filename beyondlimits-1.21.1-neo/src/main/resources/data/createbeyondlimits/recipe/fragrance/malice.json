@@ -1,0 +1,22 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "createbeyondlimits:fragrance"
+    },
+    {
+      "item": "minecraft:magma_cream",
+      "count": 4
+    },
+    {
+      "item": "minecraft:basalt",
+      "count": 2
+    }
+  ],
+  "results": [
+    {
+      "id": "createbeyondlimits:fragrance_malice"
+    }
+  ]
+}

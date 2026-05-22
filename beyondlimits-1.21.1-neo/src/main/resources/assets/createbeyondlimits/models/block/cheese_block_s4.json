@@ -1,0 +1,7 @@
+{
+  "parent": "createbeyondlimits:block/cheese_base_s4",
+  "textures": {
+    "0": "createbeyondlimits:block/cheesy",
+    "particle": "createbeyondlimits:block/cheesy"
+  }
+}

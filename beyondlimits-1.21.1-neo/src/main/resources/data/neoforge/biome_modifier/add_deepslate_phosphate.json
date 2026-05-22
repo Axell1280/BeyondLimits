@@ -1,0 +1,8 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": [
+    "createbeyondlimits:ore_deepslate_phosphate"
+  ],
+  "step": "underground_ores"
+}

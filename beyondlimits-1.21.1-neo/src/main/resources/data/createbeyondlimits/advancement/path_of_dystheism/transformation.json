@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "id": "createbeyondlimits:anchor"
+    },
+    "title": {
+      "text": "Intensification",
+      "type": "text",
+      "color": "dark_blue",
+      "bold": true
+    },
+    "description": {
+      "text": "Initiate the ancient intensification ritual.",
+      "type": "text",
+      "color": "gray",
+      "italic": true
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "createbeyondlimits:path_of_dystheism/descension_root",
+  "criteria": {
+    "started_ritual": {
+      "trigger": "createbeyondlimits:ritual_started"
+    }
+  }
+}

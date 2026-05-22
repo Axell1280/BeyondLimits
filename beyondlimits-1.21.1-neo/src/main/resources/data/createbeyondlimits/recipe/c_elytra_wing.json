@@ -1,0 +1,24 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": true,
+  "category": "",
+  "pattern": [
+    " A ",
+    "CBC",
+    "   "
+  ],
+  "key": {
+    "A": {
+      "item": "createbeyondlimits:wing"
+    },
+    "B": {
+      "item": "minecraft:dragon_breath"
+    },
+    "C": {
+      "item": "minecraft:string"
+    }
+  },
+  "result": {
+    "id": "createbeyondlimits:fabricated_elytra_piece"
+  }
+}

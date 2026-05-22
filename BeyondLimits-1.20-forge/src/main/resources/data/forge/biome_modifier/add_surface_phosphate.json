@@ -1,0 +1,16 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "minecraft:desert",
+    "minecraft:savanna",
+    "minecraft:savanna_plateau",
+    "minecraft:badlands",
+    "minecraft:eroded_badlands",
+    "minecraft:ocean",
+    "minecraft:deep_ocean",
+    "minecraft:river",
+    "minecraft:beach"
+  ],
+  "features": "createbeyondlimits:ore_phosphate",
+  "step": "underground_ores"
+}

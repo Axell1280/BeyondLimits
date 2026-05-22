@@ -1,0 +1,25 @@
+{
+  "parent": "createbeyondlimits:beyond_limits/root",
+  "display": {
+    "icon": { "item": "createbeyondlimits:totem_regen" },
+    "title": { "text": "Resilient Spirit" },
+    "description": { "text": "Find a Totem of Regeneration" },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "totem_regen": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["createbeyondlimits:totem_regen"]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["totem_regen"]]
+}

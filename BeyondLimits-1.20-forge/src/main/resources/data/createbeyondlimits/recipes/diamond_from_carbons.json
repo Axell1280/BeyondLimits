@@ -1,0 +1,69 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "tag": "createbeyondlimits:carbon_family"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "item": "minecraft:diamond",
+      "nbt": "{display:{Name:'{\"text\":\"Compressed Gem\"}'}}",
+      "chance": 25,
+      "count": 1
+    },
+    {
+      "item": "createbeyondlimits:pressure_core",
+      "chance": 25,
+      "count": 2
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "minecraft:coal"
+        }
+      ],
+      "results": [
+        {
+          "item": "createbeyondlimits:pressure_core",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createbeyondlimits:pressure_core"
+        },
+        {
+          "item": "minecraft:quartz"
+        }
+      ],
+      "results": [
+        {
+          "item": "createbeyondlimits:pressure_core"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "createbeyondlimits:pressure_core"
+        }
+      ],
+      "results": [
+        {
+          "item": "createbeyondlimits:pressure_core",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "createbeyondlimits:pressure_core"
+  }
+}

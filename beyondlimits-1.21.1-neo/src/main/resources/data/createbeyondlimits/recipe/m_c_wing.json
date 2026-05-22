@@ -1,0 +1,21 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": true,
+  "category": "",
+  "pattern": [
+    "AAA",
+    "CCC",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:feather"
+    },
+    "C": {
+      "item": "minecraft:string"
+    }
+  },
+  "result": {
+    "id": "createbeyondlimits:wing"
+  }
+}

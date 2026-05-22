@@ -1,0 +1,34 @@
+{
+  "signal_massage": {
+    "sounds": [
+      {
+        "name": "createbeyondlimits:signal_massage",
+        "stream": true
+      }
+    ]
+  },
+  "epic_consume": {
+    "sounds": [
+      {
+        "name": "createbeyondlimits:epic_consume",
+        "stream": false
+      }
+    ]
+  },
+   "aroma_step": {
+     "sounds": [
+       {
+         "name": "createbeyondlimits:aroma_step",
+         "stream": false
+       }
+     ]
+   },
+  "aroma_aura": {
+    "sounds": [
+      {
+        "name": "createbeyondlimits:aroma_aura",
+        "stream": false
+      }
+    ]
+  }
+}

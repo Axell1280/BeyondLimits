@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "id": "createbeyondlimits:aroma_disperser"
+    },
+    "title": {
+      "text": "Dispersing",
+      "type": "text",
+      "color": "gold"
+    },
+    "description": {
+      "text": "Assemble an Aroma Disperser",
+      "type": "text",
+      "color": "white"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "createbeyondlimits:beyond_limits/root",
+  "criteria": {
+    "has_aroma": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "createbeyondlimits:aroma_disperser"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_aroma"
+    ]
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "fluid": "minecraft:lava",
+      "type": "fluid_stack",
+      "amount": 250
+    },
+    {
+      "tag": "minecraft:stone_sources",
+      "count": 4
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:iron_ingot",
+      "count": 2
+    }
+  ]
+}

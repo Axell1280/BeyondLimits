@@ -1,0 +1,22 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "createbeyondlimits:fragrance"
+    },
+    {
+      "item": "minecraft:gold_ingot",
+      "count": 8
+    },
+    {
+      "item": "minecraft:blackstone",
+      "count": 4
+    }
+  ],
+  "results": [
+    {
+      "item": "createbeyondlimits:fragrance_bastion"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "createbeyondlimits:fabricated_elytra_piece"
+    },
+    {
+      "item": "createbeyondlimits:fabricated_elytra_piece"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:elytra"
+    }
+  ]
+}

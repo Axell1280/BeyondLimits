@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "id": "createbeyondlimits:intensified_anchor"
+    },
+    "title": {
+      "text": "Anchored",
+      "type": "text",
+      "color": "dark_red",
+      "bold": true
+    },
+    "description": {
+      "text": "Anchor your soul to the Intensified Anchor",
+      "type": "text",
+      "color": "gray",
+      "italic": true
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "createbeyondlimits:path_of_dystheism/transformation",
+  "criteria": {
+    "claimed_anchor": {
+      "trigger": "createbeyondlimits:anchor_claimed"
+    }
+  }
+}

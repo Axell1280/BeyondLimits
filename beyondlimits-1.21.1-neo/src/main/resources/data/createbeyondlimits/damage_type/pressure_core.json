@@ -1,0 +1,6 @@
+{
+  "message_id": "pressure_core",
+  "scaling": "never",
+  "exhaustion": 0.1,
+  "effects": "burning"
+}

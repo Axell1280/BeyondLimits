@@ -1,0 +1,51 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "createbeyondlimits:sheeted_base"
+  },
+  "loops": 2,
+  "results": [
+    {
+      "item": "createbeyondlimits:fragrance"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createbeyondlimits:sheeted_base"
+        },
+        {
+          "item": "createbeyondlimits:sheeted_pillar"
+        }
+      ],
+      "keepHeldItem": false,
+      "results": [
+        {
+          "item": "createbeyondlimits:fragrance_incomplete"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createbeyondlimits:sheeted_base"
+        },
+        {
+          "item": "createbeyondlimits:sheeted_pillar"
+        }
+      ],
+      "keepHeldItem": false,
+      "results": [
+        {
+          "item": "createbeyondlimits:fragrance_incomplete"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "createbeyondlimits:fragrance_incomplete"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "parent": "createbeyondlimits:beyond_limits/ore/diamond_assembly",
+  "display": {
+    "icon": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "title": {
+      "text": "Forgemaster's Pride",
+      "color": "dark_gray",
+      "bold": true,
+      "italic": false
+    },
+    "description": {
+      "text": "Forged Netherite Ingots using real metallurgy",
+      "color": "gold",
+      "bold": false,
+      "italic": true
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "has_forged_netherite": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:netherite_ingot",
+            "nbt": "{display:{Name:\"{\\\"text\\\":\\\"Forged Netherite\\\"}\"}}"
+          }
+        ]
+      }
+    },
+    "has_forged_scrap": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:netherite_scrap",
+            "nbt": "{display:{Name:\"{\\\"text\\\":\\\"Forged Scrap\\\"}\"}}"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "createbeyondlimits:beyond_limits/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:coal"
+    },
+    "title": {
+      "text": "Carbonize",
+      "color": "gray"
+  },
+    "description": {
+      "text": "Turn Charcoal to coal by toasting",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "has_coal": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:coal",
+            "nbt": "{display:{Name:'{\"text\":\"Toasted Coal\"}'}}"
+          }
+        ]
+      }
+    }
+  }
+}

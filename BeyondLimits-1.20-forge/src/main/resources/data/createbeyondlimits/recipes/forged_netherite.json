@@ -1,0 +1,53 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "minecraft:diamond"
+  },
+  "transitionalItem": {
+    "item": "createbeyondlimits:incomplete_forged_netherite"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        { "item": "createbeyondlimits:incomplete_forged_netherite" },
+        { "item": "create:powdered_obsidian" }
+      ],
+      "results": [
+        { "item": "createbeyondlimits:incomplete_forged_netherite" }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        { "item": "createbeyondlimits:incomplete_forged_netherite" },
+        { "item": "minecraft:gold_ingot" }
+      ],
+      "results": [
+        { "item": "createbeyondlimits:incomplete_forged_netherite" }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        { "item": "createbeyondlimits:incomplete_forged_netherite" }
+      ],
+      "results": [
+        { "item": "createbeyondlimits:incomplete_forged_netherite" }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:netherite_ingot",
+      "nbt": "{display:{Name:\"{\\\"text\\\":\\\"Forged Netherite\\\"}\"}}",
+      "chance": 50
+    },
+    {
+      "item": "minecraft:netherite_scrap",
+      "nbt": "{display:{Name:\"{\\\"text\\\":\\\"Forged Scrap\\\"}\"}}",
+      "chance": 50
+    }
+  ],
+  "loops": 1
+}

@@ -1,0 +1,14 @@
+{
+  "type": "create:crushing",
+  "processing_time": 40,
+  "ingredients": [
+    {
+      "item": "createbeyondlimits:sunflower_seed"
+    }
+  ],
+  "results": [
+    {
+      "id": "createbeyondlimits:sunflower_kernal"
+    }
+  ]
+}

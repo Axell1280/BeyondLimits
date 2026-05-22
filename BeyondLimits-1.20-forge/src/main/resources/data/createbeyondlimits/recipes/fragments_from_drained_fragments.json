@@ -1,0 +1,16 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "createbeyondlimits:drained_nether_star_fragment"
+    },
+    {
+      "item": "minecraft:blaze_powder"
+    }
+  ],
+  "results": [
+    {
+      "item": "createbeyondlimits:nether_star_fragment"
+    }
+  ]
+}

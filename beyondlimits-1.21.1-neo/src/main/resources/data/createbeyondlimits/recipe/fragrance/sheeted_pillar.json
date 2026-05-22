@@ -1,0 +1,15 @@
+{
+  "type": "create:cutting",
+  "processing_time": 100,
+  "ingredients": [
+    {
+      "item": "create:iron_sheet"
+    }
+  ],
+  "results": [
+    {
+      "id": "createbeyondlimits:sheeted_pillar",
+      "count": 2
+    }
+  ]
+}

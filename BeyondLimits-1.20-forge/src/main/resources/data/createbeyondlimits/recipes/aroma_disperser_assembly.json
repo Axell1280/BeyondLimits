@@ -1,0 +1,93 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create:brass_casing"
+  },
+  "transitionalItem": {
+    "item": "createbeyondlimits:incomplete_disperser"
+  },
+  "sequence": [
+    {
+      "type": "create:cutting",
+      "ingredients": [
+        {
+          "item": "createbeyondlimits:incomplete_disperser"
+        }
+      ],
+      "results": [
+        {
+          "item": "createbeyondlimits:incomplete_disperser"
+        }
+      ],
+      "processingTime": 50
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createbeyondlimits:incomplete_disperser"
+        },
+        {
+          "item": "create:cogwheel"
+        }
+      ],
+      "results": [
+        {
+          "item": "createbeyondlimits:incomplete_disperser"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createbeyondlimits:incomplete_disperser"
+        },
+        {
+          "item": "create:precision_mechanism"
+        }
+      ],
+      "results": [
+        {
+          "item": "createbeyondlimits:incomplete_disperser"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createbeyondlimits:incomplete_disperser"
+        },
+        {
+          "item": "minecraft:glass"
+        }
+      ],
+      "results": [
+        {
+          "item": "createbeyondlimits:incomplete_disperser"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "createbeyondlimits:incomplete_disperser"
+        }
+      ],
+      "results": [
+        {
+          "item": "createbeyondlimits:incomplete_disperser"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "createbeyondlimits:aroma_disperser",
+      "chance": 1.0
+    }
+  ],
+  "loops": 1
+}

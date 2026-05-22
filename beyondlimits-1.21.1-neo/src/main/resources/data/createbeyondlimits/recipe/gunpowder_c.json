@@ -1,0 +1,77 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create:powdered_obsidian"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "minecraft:redstone"
+        },
+        {
+          "item": "minecraft:blaze_powder"
+        }
+      ],
+      "results": [
+        {
+          "id": "minecraft:redstone"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "minecraft:redstone"
+        },
+        {
+          "item": "minecraft:magma_cream"
+        }
+      ],
+      "results": [
+        {
+          "id": "minecraft:redstone"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "minecraft:redstone"
+        }
+      ],
+      "results": [
+        {
+          "id": "minecraft:redstone"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "minecraft:redstone"
+        }
+      ],
+      "results": [
+        {
+          "id": "minecraft:redstone"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:gunpowder",
+      "chance": 0.5,
+      "count": 4
+    }
+  ],
+  "loops": 1,
+  "transitional_item": {
+    "id": "minecraft:redstone"
+  }
+}

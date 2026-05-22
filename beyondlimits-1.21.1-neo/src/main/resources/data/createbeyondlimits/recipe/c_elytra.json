@@ -1,0 +1,17 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "createbeyondlimits:fabricated_elytra_piece"
+    },
+    {
+      "item": "createbeyondlimits:fabricated_elytra_piece"
+    }
+  ],
+  "keep_held_item": false,
+  "results": [
+    {
+      "id": "minecraft:elytra"
+    }
+  ]
+}

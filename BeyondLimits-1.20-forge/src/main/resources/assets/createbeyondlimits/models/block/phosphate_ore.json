@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "createbeyondlimits:block/phosphate_ore"
+  }
+}

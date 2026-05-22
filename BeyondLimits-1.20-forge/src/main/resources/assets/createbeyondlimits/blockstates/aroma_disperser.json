@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "createbeyondlimits:block/aroma_disperser_casing" },
+    "facing=east":  { "model": "createbeyondlimits:block/aroma_disperser_casing", "y": 90 },
+    "facing=south": { "model": "createbeyondlimits:block/aroma_disperser_casing", "y": 180 },
+    "facing=west":  { "model": "createbeyondlimits:block/aroma_disperser_casing", "y": 270 }
+  }
+}

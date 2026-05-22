@@ -1,0 +1,22 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "createbeyondlimits:fragrance"
+    },
+    {
+      "item": "minecraft:blaze_powder",
+      "count": 4
+    },
+    {
+      "item": "minecraft:netherrack",
+      "count": 2
+    }
+  ],
+  "results": [
+    {
+      "item": "createbeyondlimits:fragrance_cinder"
+    }
+  ]
+}

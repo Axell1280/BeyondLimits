@@ -1,0 +1,34 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:echo_shard"
+    },
+    "title": {
+      "text": "Path Of Dystheism",
+      "italic": true,
+      "hoverEvent": {
+        "action": "show_text",
+        "value": {
+          "text": "A journey from the Beyond into the heart of Dystheism.",
+          "color": "gold",
+          "bold": true
+        }
+      }
+    },
+    "description": {
+      "text": "Leave the limits of the physical world behind. Transcend the Beyond and embrace the Path of Dystheism.",
+      "color": "dark_red",
+      "bold": true,
+      "underlined": false
+    },
+    "frame": "challenge",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "background": "minecraft:textures/block/crying_obsidian.png"
+  },
+    "criteria": {
+      "tick": {
+        "trigger": "minecraft:tick"
+      }
+    }
+}

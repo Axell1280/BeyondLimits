@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "createbeyondlimits:item/fabricated_elytra_piece"
+
+  }
+}

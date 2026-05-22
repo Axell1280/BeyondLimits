@@ -1,0 +1,58 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create:powdered_obsidian"
+  },
+  "transitionalItem": {
+    "item": "minecraft:redstone"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        { "item": "minecraft:redstone" },
+        { "item": "minecraft:blaze_powder" }
+      ],
+      "results": [
+        { "item": "minecraft:redstone" }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        { "item": "minecraft:redstone" },
+        { "item": "minecraft:magma_cream" }
+      ],
+      "results": [
+        { "item": "minecraft:redstone" }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        { "item": "minecraft:redstone" }
+      ],
+      "results": [
+        { "item": "minecraft:redstone" }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        { "item": "minecraft:redstone" }
+      ],
+      "results": [
+        { "item": "minecraft:redstone" }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "chance": 0.5,
+      "item": "minecraft:gunpowder",
+      "count": 4,
+      "nbt": "{display:{Name:'{\"text\":\"Fabricated Gunpowder\"}'}}"
+    }
+  ],
+  "loops": 1
+}

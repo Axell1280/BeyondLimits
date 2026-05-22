@@ -1,0 +1,28 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "fluid": "minecraft:milk",
+      "type": "fluid_stack",
+      "amount": 1000
+    },
+    {
+      "item": "minecraft:wheat",
+      "count": 4
+    },
+    {
+      "item": "minecraft:sugar",
+      "count": 2
+    },
+    {
+      "item": "minecraft:egg",
+      "count": 2
+    }
+  ],
+  "results": [
+    {
+      "id": "createbeyondlimits:parmesan_cheese_block"
+    }
+  ]
+}

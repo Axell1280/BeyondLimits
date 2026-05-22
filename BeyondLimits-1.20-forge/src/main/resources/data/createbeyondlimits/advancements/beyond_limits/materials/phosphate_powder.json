@@ -1,0 +1,25 @@
+{
+  "parent": "createbeyondlimits:beyond_limits/root",
+  "display": {
+    "icon": { "item": "createbeyondlimits:raw_phosphate" },
+    "title": { "text": "Phosphoric" },
+    "description": { "text": "Mine Phosphate" },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "phosphate_powder": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["createbeyondlimits:raw_phosphate"]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["phosphate_powder"]]
+}

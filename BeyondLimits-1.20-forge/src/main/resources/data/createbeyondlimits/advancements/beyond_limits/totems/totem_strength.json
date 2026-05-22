@@ -1,0 +1,25 @@
+{
+  "parent": "createbeyondlimits:beyond_limits/totems/totem_speed",
+  "display": {
+    "icon": { "item": "createbeyondlimits:totem_strength" },
+    "title": { "text": "Mighty Spirit" },
+    "description": { "text": "Find a Totem of Strength" },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "totem_strength": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["createbeyondlimits:totem_strength"]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["totem_strength"]]
+}

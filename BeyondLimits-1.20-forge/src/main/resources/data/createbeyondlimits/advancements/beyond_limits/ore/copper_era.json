@@ -1,0 +1,47 @@
+{
+  "parent": "createbeyondlimits:beyond_limits/ore/iron_era",
+  "display": {
+    "icon": {
+      "item": "minecraft:copper_ingot"
+    },
+    "title": {
+      "text": "Copper Era",
+      "color": "gold"
+    },
+    "description": {
+      "text": "Copper from earth",
+      "color": "white"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "has_processed_copper_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:copper_ingot",
+            "nbt": "{display:{Name:'{\"text\":\"Processed Copper\"}'}}"
+          }
+        ]
+      }
+    },
+    "has_processed_copper_nugget": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:copper_nugget",
+            "nbt": "{display:{Name:'{\"text\":\"Processed Copper Nugget\"}'}}"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    ["has_processed_copper_ingot", "has_processed_copper_nugget"]
+  ]
+}

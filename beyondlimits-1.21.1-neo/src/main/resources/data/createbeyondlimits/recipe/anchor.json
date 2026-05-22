@@ -1,0 +1,66 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "createbeyondlimits:sheeted_base"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "id": "createbeyondlimits:anchor"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createbeyondlimits:sheeted_base"
+        },
+        {
+          "item": "create:super_glue"
+        }
+      ],
+      "keep_held_item": true,
+      "results": [
+        {
+          "id": "createbeyondlimits:sheeted_base"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createbeyondlimits:sheeted_base"
+        },
+        {
+          "item": "minecraft:iron_block"
+        }
+      ],
+      "results": [
+        {
+          "id": "createbeyondlimits:sheeted_base"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createbeyondlimits:sheeted_base"
+        },
+        {
+          "item": "createbeyondlimits:sheeted_base"
+        }
+      ],
+      "results": [
+        {
+          "id": "createbeyondlimits:sheeted_base"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "createbeyondlimits:sheeted_base"
+  }
+}

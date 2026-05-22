@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " A ",
+    "A A",
+    " A "
+  ],
+  "key": {
+    "A": {
+      "item": "createbeyondlimits:nether_star_fragment"
+    }
+  },
+  "result": {
+    "item": "minecraft:nether_star"
+  }
+}

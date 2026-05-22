@@ -1,0 +1,16 @@
+{
+  "type": "create:crushing",
+  "processing_time": 50,
+  "ingredients": [
+    {
+      "item": "minecraft:nether_star"
+    }
+  ],
+  "results": [
+    {
+      "id": "createbeyondlimits:nether_star_fragment",
+      "chance": 90,
+      "count": 4
+    }
+  ]
+}

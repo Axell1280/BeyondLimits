@@ -1,0 +1,25 @@
+{
+  "parent": "createbeyondlimits:beyond_limits/materials/phosphate_powder",
+  "display": {
+    "icon": { "item": "createbeyondlimits:superphosphate" },
+    "title": { "text": "Super Fertilizer?" },
+    "description": { "text": "Craft Superphosphate" },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "superphosphate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["createbeyondlimits:superphosphate"]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["superphosphate"]]
+}

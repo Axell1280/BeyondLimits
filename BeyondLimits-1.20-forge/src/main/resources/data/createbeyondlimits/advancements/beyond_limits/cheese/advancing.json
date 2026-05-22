@@ -1,0 +1,49 @@
+{
+  "parent": "createbeyondlimits:beyond_limits/cheese/dairy",
+  "display": {
+    "icon": {
+      "item": "createbeyondlimits:blue_cheese_block"
+    },
+    "title": {
+      "text": "Eh... That smell!!",
+      "color": "aqua"
+    },
+    "description": {
+      "text": "The taste is great, but that smell..."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_cheese_block": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "createbeyondlimits:blue_cheese_block"
+            ]
+          }
+        ]
+      }
+    },
+    "get_cheese_slice": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "createbeyondlimits:blue_cheese_slice"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    ["get_cheese_block"],
+    ["get_cheese_slice"]
+  ]
+}

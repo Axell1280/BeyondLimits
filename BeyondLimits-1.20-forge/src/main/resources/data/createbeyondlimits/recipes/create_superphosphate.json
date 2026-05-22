@@ -1,0 +1,12 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    { "item": "createbeyondlimits:raw_phosphate" },
+    { "item": "createbeyondlimits:raw_phosphate" },
+    { "tag": "createbeyondlimits:composible" }
+  ],
+  "results": [
+    { "item": "createbeyondlimits:superphosphate" }
+  ],
+  "heatRequirement": "heated"
+}

@@ -1,0 +1,15 @@
+{
+  "type": "create:pressing",
+  "processingTime": 400,
+  "ingredients": [
+    {
+      "tag": "minecraft:stone_sources"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:dirt",
+      "count": 1
+    }
+  ]
+}

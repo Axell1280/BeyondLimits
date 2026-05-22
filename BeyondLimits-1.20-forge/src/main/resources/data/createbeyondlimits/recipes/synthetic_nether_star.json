@@ -1,0 +1,64 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "createbeyondlimits:nether_star_fragment"
+  },
+  "transitionalItem": {
+    "item": "createbeyondlimits:unstable_quartz"
+  },
+  "sequence": [
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "createbeyondlimits:nether_star_fragment"
+        }
+      ],
+      "results": [
+        {
+          "item": "createbeyondlimits:unstable_quartz",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createbeyondlimits:unstable_quartz"
+        },
+        {
+          "item": "minecraft:quartz"
+        }
+      ],
+      "results": [
+        {
+          "item": "createbeyondlimits:unstable_quartz",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "createbeyondlimits:unstable_quartz"
+        }
+      ],
+      "results": [
+        {
+          "item": "createbeyondlimits:unstable_quartz",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "loops": 1,
+  "results": [
+    {
+      "item": "minecraft:nether_star",
+      "nbt": "{display:{Name:'{\"text\":\"Synthetic Nether Star\",\"italic\":false}'}}",
+      "count": 1
+    }
+  ]
+}

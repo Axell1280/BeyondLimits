@@ -1,0 +1,10 @@
+{
+  "epic_consume": {
+    "sounds": [
+      {
+        "name": "createbeyondlimits:epic_consume",
+        "stream": false
+      }
+    ]
+  }
+}
