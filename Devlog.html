@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create: Beyond Limits - Devlog</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 12mm;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      color: #334155;
+      background-color: #f8fafc;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px 16px; /* Added top & bottom clearance */
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    /* Pastel Header */
+    .header {
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: 14px;
+      padding: 18px 22px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 16px;
+    }
+
+    .header-logo {
+      width: 90px;
+      height: 90px;
+      object-fit: contain;
+      border-radius: 10px;
+      background: #ffffff;
+      padding: 4px;
+      border: 1px solid #dbeafe;
+    }
+
+    .header-info {
+      flex: 1;
+    }
+
+    .header-title {
+      font-size: 24px;
+      font-weight: 800;
+      margin: 0 0 2px 0;
+      color: #1e40af;
+    }
+
+    .header-sub {
+      font-size: 14px;
+      color: #3b82f6;
+      font-weight: 600;
+    }
+
+    .header-tag {
+      display: inline-block;
+      background: #dbeafe;
+      color: #1e40af;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 12px;
+      margin-top: 6px;
+    }
+
+    /* Content Cards */
+    .card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 18px 22px;
+      margin-bottom: 14px;
+    }
+
+    h2 {
+      font-size: 15px;
+      font-weight: 700;
+      color: #2563eb;
+      margin-top: 0;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #eff6ff;
+      padding-bottom: 4px;
+    }
+
+    p {
+      margin: 0 0 10px 0;
+      font-size: 13.5px;
+      color: #334155;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Dual Image Teaser Frame */
+    .media-box-dual {
+      background: #f1f5f9;
+      border-radius: 10px;
+      padding: 14px;
+      margin: 12px 0;
+      text-align: center;
+    }
+
+    .teaser-grid {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .teaser-grid img {
+      max-height: 170px;
+      max-width: 45%;
+      object-fit: contain;
+      border-radius: 8px;
+      background: #ffffff;
+      padding: 6px;
+      border: 1px solid #e2e8f0;
+    }
+
+    .banner-img {
+      width: 100%;
+      max-height: 75px;
+      object-fit: contain;
+      margin: 8px 0 12px 0;
+    }
+
+    .caption {
+      font-size: 11.5px;
+      color: #64748b;
+      margin-top: 8px;
+      font-weight: 500;
+    }
+
+    /* Feature Box */
+    .block-box {
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      border-radius: 10px;
+      padding: 14px 18px;
+      margin: 12px 0;
+    }
+
+    .block-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: #166534;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    .block-list {
+      margin: 0;
+      padding-left: 20px;
+      font-size: 13.5px;
+      color: #14532d;
+    }
+
+    .block-list li {
+      margin-bottom: 4px;
+    }
+
+    /* Personal Note Card */
+    .footer-card {
+      background: #fff7ed;
+      border: 1px solid #ffedd5;
+      border-radius: 12px;
+      padding: 18px 22px;
+    }
+
+    .author {
+      font-weight: 700;
+      color: #c2410c;
+      font-size: 15px;
+      margin-top: 10px;
+    }
+
+    /* Automatic Dark Theme Overrides */
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #0f172a;
+        color: #cbd5e1;
+      }
+
+      .header {
+        background: #1e293b;
+        border-color: #334155;
+      }
+
+      .header-logo {
+        background: #0f172a;
+        border-color: #334155;
+      }
+
+      .header-title {
+        color: #60a5fa;
+      }
+
+      .header-sub {
+        color: #93c5fd;
+      }
+
+      .header-tag {
+        background: #1e3a8a;
+        color: #bfdbfe;
+      }
+
+      .card {
+        background: #1e293b;
+        border-color: #334155;
+      }
+
+      h2 {
+        color: #60a5fa;
+        border-bottom-color: #334155;
+      }
+
+      p {
+        color: #cbd5e1;
+      }
+
+      .media-box-dual {
+        background: #0f172a;
+      }
+
+      .teaser-grid img {
+        background: #1e293b;
+        border-color: #334155;
+      }
+
+      .caption {
+        color: #94a3b8;
+      }
+
+      .block-box {
+        background: #064e3b;
+        border-color: #047857;
+      }
+
+      .block-title {
+        color: #6ee7b7;
+      }
+
+      .block-list {
+        color: #a7f3d0;
+      }
+
+      .footer-card {
+        background: #451a03;
+        border-color: #78350f;
+      }
+
+      .footer-card p {
+        color: #fed7aa;
+      }
+
+      .author {
+        color: #fb923c;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Header Section -->
+    <div class="header">
+      <img src="minecraft_title.png" alt="Create: Beyond Limits Icon" class="header-logo">
+      <div class="header-info">
+        <h1 class="header-title">Create: Beyond Limits</h1>
+        <div class="header-sub">Update Delays & Long Periods of Absence</div>
+        <span class="header-tag">Devlog — 09/09/2026</span>
+      </div>
+    </div>
+
+    <!-- Summer Status -->
+    <div class="card">
+      <h2>Summer Status</h2>
+      <p>
+        Upon the start of summer break in my country, I had updates planned to make a release, but I haven't had time to focus on it, and so I was never active on the mod for 3 months: June, July & most of August.
+      </p>
+      <p>
+        I had a plan to make a new mini mod that is independent from Create: Beyond Limits, and yet I stopped almost at the finish line after crashing out on the entity's behavior.
+      </p>
+
+      <!-- Side-by-side Teaser Showcase -->
+      <div class="media-box-dual">
+        <div class="teaser-grid">
+          <img src="icon.png" alt="Companions From Beyond Teaser">
+          <img src="minecraft_title.png" alt="Create Beyond Limits Icon with Tiny Robot">
+        </div>
+        <div class="caption">
+          Teased on my X (left) and featured at the top of the new Create: Beyond Limits icon (right)
+        </div>
+      </div>
+    </div>
+
+    <!-- Upcoming Updates -->
+    <div class="card">
+      <h2>Upcoming Updates (2.0.0 & 2.5.0)</h2>
+      
+      <!-- Thermal Heating Banner -->
+      <img src="title2.0.0_minimised.png" alt="Thermal Heating Banner" class="banner-img">
+
+      <p>
+        It's September at the time I am writing this, and I have also revealed the next update (2.0.0) with its logical sequel: Thermal Heating & Thermal Cooling (the 2.0.0 & 2.5.0 updates).
+      </p>
+      <p>
+        As for what I was planning, I planned to release the update to the public (2.0.0) at the end of the month. But as always, code block hits, code stops functioning, I stop thinking straight and start making garbage.
+      </p>
+      <p>
+        As of 09/09/26, the main structure of the update has been made—from textures, models, and recipes to fluid transfer and the Conductor, which is the main block of the update. Yet systems are not fully functional: branching isn't working as intended, conductors bug out and crash the game in specific scenarios. I don't want to rush the update and yet I don't want to take a lot of time on it. In addition, school is starting 09/15/26, which is going to slow down the process even more.
+      </p>
+
+      <div class="block-box">
+        <div class="block-title">Revealed Blocks in Title</div>
+        <ul class="block-list">
+          <li>Thermal Conductor</li>
+          <li>Thermal Pipes</li>
+          <li>Thermal Outflow</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Personal Note -->
+    <div class="footer-card">
+      <p>
+        I will and always apologize for my absence and the update delays, although it's not under my hands to handle, as I am a human being that stresses, gets sick, has a family to spend time with, and a teenager that gets mood swings and headaches all the time.
+      </p>
+      <p style="margin-top: 10px;">
+        I thank you all for your support and affection by downloading my mod.
+      </p>
+      <div class="author">Axell</div>
+    </div>
+
+  </div>
+
+</body>
+</html>
