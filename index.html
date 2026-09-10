@@ -16,72 +16,16 @@
             --border-color: #2e323b;
         }
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: var(--bg-color); color: var(--text-color); line-height: 1.6; padding: 20px; }
+        .container { max-width: 900px; margin: 0 auto; }
+        header { text-align: center; padding: 40px 0 20px; }
+        .header-logo { max-width: 100%; width: 500px; height: auto; margin-bottom: 15px; }
+        .tagline { font-size: 1.1rem; color: var(--subtext-color); font-style: italic; margin-bottom: 25px; }
 
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.6;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        header {
-            text-align: center;
-            padding: 40px 0 20px;
-        }
-
-        .header-logo {
-            max-width: 100%;
-            width: 500px;
-            height: auto;
-            margin-bottom: 15px;
-        }
-
-        .tagline {
-            font-size: 1.1rem;
-            color: var(--subtext-color);
-            font-style: italic;
-            margin-bottom: 25px;
-        }
-
-        /* Link Buttons Grid */
-        .links-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 12px;
-            margin-bottom: 40px;
-        }
-
-        .btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            padding: 12px 16px;
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            color: var(--text-color);
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.2s ease;
-        }
-
-        .btn:hover {
-            transform: translateY(-2px);
-            border-color: var(--accent-color);
-            background-color: #242730;
-        }
+        .links-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-bottom: 40px; }
+        .btn { display: flex; align-items: center; justify-content: center; gap: 10px; padding: 12px 16px; background-color: var(--card-bg); border: 1px solid var(--border-color); border-radius: 8px; color: var(--text-color); text-decoration: none; font-weight: 600; transition: all 0.2s ease; }
+        .btn:hover { transform: translateY(-2px); border-color: var(--accent-color); background-color: #242730; }
 
         .btn-modrinth:hover { border-color: #00AF5C; color: #00AF5C; }
         .btn-curseforge:hover { border-color: #F16436; color: #F16436; }
@@ -89,74 +33,18 @@
         .btn-wiki:hover { border-color: #2b9348; color: #52b788; }
         .btn-github:hover { border-color: #ffffff; color: #ffffff; }
 
-        /* Devlogs Section */
-        .section-title {
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-            border-bottom: 2px solid var(--border-color);
-            padding-bottom: 8px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
+        .section-title { font-size: 1.5rem; margin-bottom: 15px; border-bottom: 2px solid var(--border-color); padding-bottom: 8px; display: flex; align-items: center; justify-content: space-between; }
+        .view-all { font-size: 0.9rem; color: var(--accent-hover); text-decoration: none; }
+        .view-all:hover { text-decoration: underline; }
 
-        .devlog-card {
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 10px;
-            padding: 20px;
-            margin-bottom: 30px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
+        .devlog-card { background-color: var(--card-bg); border: 1px solid var(--border-color); border-radius: 10px; padding: 20px; margin-bottom: 30px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; }
+        .devlog-info h3 { color: var(--accent-hover); margin-bottom: 5px; }
+        .devlog-info p { color: var(--subtext-color); font-size: 0.95rem; }
+        .btn-devlog { background-color: var(--accent-color); color: #fff; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold; transition: background 0.2s; }
+        .btn-devlog:hover { background-color: var(--accent-hover); }
 
-        .devlog-info h3 {
-            color: var(--accent-hover);
-            margin-bottom: 5px;
-        }
-
-        .devlog-info p {
-            color: var(--subtext-color);
-            font-size: 0.95rem;
-        }
-
-        .btn-devlog {
-            background-color: var(--accent-color);
-            color: #fff;
-            padding: 10px 20px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: background 0.2s;
-        }
-
-        .btn-devlog:hover {
-            background-color: var(--accent-hover);
-        }
-
-        /* Overview Section */
-        .overview-box {
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 10px;
-            padding: 25px;
-            margin-bottom: 30px;
-        }
-
-        .overview-box p {
-            margin-bottom: 15px;
-        }
-
-        footer {
-            text-align: center;
-            color: var(--subtext-color);
-            font-size: 0.85rem;
-            padding: 20px 0;
-            border-top: 1px solid var(--border-color);
-        }
+        .overview-box { background-color: var(--card-bg); border: 1px solid var(--border-color); border-radius: 10px; padding: 25px; margin-bottom: 30px; }
+        footer { text-align: center; color: var(--subtext-color); font-size: 0.85rem; padding: 20px 0; border-top: 1px solid var(--border-color); }
     </style>
 </head>
 <body>
@@ -167,37 +55,28 @@
         <p class="tagline">“Automation is not the end goal — evolution of systems is.”</p>
     </header>
 
-    <!-- Project Links -->
     <div class="links-grid">
-        <a href="https://modrinth.com/mod/create-beyond-limits" class="btn btn-modrinth" target="_blank">
-            <i class="fa-solid font-awesome"></i> Modrinth
-        </a>
-        <a href="https://www.curseforge.com/minecraft/mc-mods/create-beyondlimits" class="btn btn-curseforge" target="_blank">
-            <i class="fa-solid fa-fire"></i> CurseForge
-        </a>
-        <a href="https://discord.gg/9v8mYEv5p" class="btn btn-discord" target="_blank">
-            <i class="fa-brands fa-discord"></i> Discord
-        </a>
-        <a href="https://beyond-limits.fandom.com/wiki/Beyond_Limits_Wiki" class="btn btn-wiki" target="_blank">
-            <i class="fa-solid fa-book"></i> Wiki
-        </a>
-        <a href="https://github.com/Axell1280/BeyondLimits" class="btn btn-github" target="_blank">
-            <i class="fa-brands fa-github"></i> GitHub Source
-        </a>
+        <a href="https://modrinth.com/mod/create-beyond-limits" class="btn btn-modrinth" target="_blank"><i class="fa-solid fa-cube"></i> Modrinth</a>
+        <a href="https://www.curseforge.com/minecraft/mc-mods/create-beyondlimits" class="btn btn-curseforge" target="_blank"><i class="fa-solid fa-fire"></i> CurseForge</a>
+        <a href="https://discord.gg/9v8mYEv5p" class="btn btn-discord" target="_blank"><i class="fa-brands fa-discord"></i> Discord</a>
+        <a href="https://beyond-limits.fandom.com/wiki/Beyond_Limits_Wiki" class="btn btn-wiki" target="_blank"><i class="fa-solid fa-book"></i> Wiki</a>
+        <a href="https://github.com/Axell1280/BeyondLimits" class="btn btn-github" target="_blank"><i class="fa-brands fa-github"></i> GitHub Source</a>
     </div>
 
-    <!-- Devlog Hub -->
-    <h2 class="section-title"><i class="fa-solid fa-newspaper"></i> Development Logs</h2>
+    <div class="section-title">
+        <span><i class="fa-solid fa-newspaper"></i> Latest Devlog</span>
+        <a href="devlogs.html" class="view-all">View All History <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+
     <div class="devlog-card">
         <div class="devlog-info">
-            <h3>Devlog #1 — The Sprinkled Update [ Sep 2026 ]</h3>
-            <p>v1.5.0 features: Fluid logistics, mechanical sprinklers, rotary joints, and thermal core mechanics.</p>
+            <h3>Update Delays & Thermal Heating (2.0.0) [ 09/09/2026 ]</h3>
+            <p>Summer hiatus summary, new Thermal Heating (2.0.0) reveal, Conductor block progress, and upcoming release plans.</p>
         </div>
         <a href="Devlog.html" class="btn-devlog">Read Devlog <i class="fa-solid fa-arrow-right"></i></a>
     </div>
 
-    <!-- Mod Overview -->
-    <h2 class="section-title"><i class="fa-solid fa-gears"></i> About the Mod</h2>
+    <h2 class="section-title"><span><i class="fa-solid fa-gears"></i> About the Mod</span></h2>
     <div class="overview-box">
         <p><strong>Create: Beyond Limits</strong> expands the Create mod with structured progression systems, animated machinery, and layered world interaction mechanics.</p>
         <p>This mod does not replace Create; it evolves it. The focus is on long-term progression, structured automation logic, and immersive mechanical systems that reward planning and experimentation.</p>
