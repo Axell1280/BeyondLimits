@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devlog Archive — Create: Beyond Limits</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --bg-color: #121316;
+            --card-bg: #1c1e24;
+            --accent-color: #e07a5f;
+            --accent-hover: #f4a261;
+            --text-color: #e0e1dd;
+            --subtext-color: #a0a5b1;
+            --border-color: #2e323b;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: var(--bg-color); color: var(--text-color); line-height: 1.6; padding: 20px; }
+        .container { max-width: 800px; margin: 0 auto; }
+        
+        header { padding: 30px 0 20px; display: flex; align-items: center; justify-content: space-between; border-bottom: 2px solid var(--border-color); margin-bottom: 30px; }
+        .back-btn { color: var(--subtext-color); text-decoration: none; font-weight: 600; font-size: 0.95rem; }
+        .back-btn:hover { color: var(--accent-hover); }
+
+        .devlog-list { display: flex; flex-direction: column; gap: 16px; }
+        .devlog-item { background-color: var(--card-bg); border: 1px solid var(--border-color); border-radius: 10px; padding: 20px; display: flex; justify-content: space-between; align-items: center; text-decoration: none; color: inherit; transition: all 0.2s; }
+        .devlog-item:hover { transform: translateX(5px); border-color: var(--accent-color); }
+        .devlog-title { color: var(--accent-hover); font-size: 1.1rem; font-weight: 700; margin-bottom: 4px; }
+        .devlog-date { color: var(--subtext-color); font-size: 0.85rem; }
+        .badge-special { background: #e07a5f22; color: var(--accent-color); border: 1px solid var(--accent-color); font-size: 0.75rem; padding: 2px 8px; border-radius: 12px; font-weight: bold; margin-left: 8px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1><i class="fa-solid fa-newspaper"></i> Development Logs</h1>
+        <a href="index.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Main Menu</a>
+    </header>
+
+    <div class="devlog-list" id="devlogContainer">
+        <!-- Special Initial Devlog -->
+        <a href="Devlog.html" class="devlog-item">
+            <div>
+                <div class="devlog-title">Update Delays & Thermal Heating (2.0.0) <span class="badge-special">Genesis</span></div>
+                <div class="devlog-date"><i class="fa-regular fa-calendar"></i> September 09, 2026</div>
+            </div>
+            <i class="fa-solid fa-chevron-right" style="color: var(--subtext-color);"></i>
+        </a>
+    </div>
+</div>
+
+<script>
+    // Add new devlog file names to this list as you release them!
+    // Format: "devlog-MONTH-DAY-YEAR.html" (e.g., "devlog-12-05-26.html")
+    const devlogFiles = [
+        "devlog-12-05-26.html" // Example future devlog
+    ];
+
+    const container = document.getElementById("devlogContainer");
+
+    devlogFiles.forEach(file => {
+        // Extract date numbers from filename "devlog-MM-DD-YY.html"
+        const cleanName = file.replace("devlog-", "").replace(".html", "");
+        const parts = cleanName.split("-");
+
+        if (parts.length === 3) {
+            const month = parseInt(parts[0]);
+            const day = parseInt(parts[1]);
+            const year = "20" + parts[2];
+
+            const dateObj = new Date(year, month - 1, day);
+            const formattedDate = dateObj.toLocaleDateString('en-US', { month: 'long', day: '2-digit', year: 'numeric' });
+
+            const item = document.createElement("a");
+            item.href = file;
+            item.className = "devlog-item";
+            item.innerHTML = `
+                <div>
+                    <div class="devlog-title">${formattedDate} Devlog</div>
+                    <div class="devlog-date"><i class="fa-regular fa-calendar"></i> ${formattedDate}</div>
+                </div>
+                <i class="fa-solid fa-chevron-right" style="color: var(--subtext-color);"></i>
+            `;
+            container.appendChild(item);
+        }
+    });
+</script>
+
+</body>
+</html>
