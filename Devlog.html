@@ -3,25 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <title>Create: Beyond Limits - Devlog</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    @page {
-      size: A4;
-      margin: 12mm;
+    :root {
+      --bg-color: #121316;
+      --card-bg: #1c1e24;
+      --card-inner: #16181d;
+      --accent-color: #e07a5f;
+      --accent-hover: #f4a261;
+      --text-color: #e0e1dd;
+      --subtext-color: #a0a5b1;
+      --border-color: #2e323b;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-      color: #334155;
-      background-color: #f8fafc;
+      color: var(--text-color);
+      background-color: var(--bg-color);
       line-height: 1.6;
       margin: 0;
-      padding: 32px 16px; /* Added top & bottom clearance */
-      -webkit-print-color-adjust: exact;
-      print-color-adjust: exact;
+      padding: 32px 16px;
     }
 
     .container {
@@ -29,10 +32,27 @@
       margin: 0 auto;
     }
 
-    /* Pastel Header */
+    /* Top Navigation */
+    .top-nav {
+      margin-bottom: 20px;
+    }
+
+    .back-btn {
+      color: var(--subtext-color);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+
+    .back-btn:hover {
+      color: var(--accent-hover);
+    }
+
+    /* Header Box */
     .header {
-      background: #eff6ff;
-      border: 1px solid #bfdbfe;
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
       border-radius: 14px;
       padding: 18px 22px;
       display: flex;
@@ -46,32 +66,31 @@
       height: 90px;
       object-fit: contain;
       border-radius: 10px;
-      background: #ffffff;
+      background: var(--card-inner);
       padding: 4px;
-      border: 1px solid #dbeafe;
+      border: 1px solid var(--border-color);
     }
 
-    .header-info {
-      flex: 1;
-    }
+    .header-info { flex: 1; }
 
     .header-title {
       font-size: 24px;
       font-weight: 800;
       margin: 0 0 2px 0;
-      color: #1e40af;
+      color: var(--accent-hover);
     }
 
     .header-sub {
       font-size: 14px;
-      color: #3b82f6;
+      color: var(--text-color);
       font-weight: 600;
     }
 
     .header-tag {
       display: inline-block;
-      background: #dbeafe;
-      color: #1e40af;
+      background: #e07a5f22;
+      color: var(--accent-color);
+      border: 1px solid var(--accent-color);
       font-size: 11px;
       font-weight: 700;
       padding: 3px 10px;
@@ -79,38 +98,37 @@
       margin-top: 6px;
     }
 
-    /* Content Cards */
+    /* Cards */
     .card {
-      background: #ffffff;
-      border: 1px solid #e2e8f0;
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
       border-radius: 12px;
       padding: 18px 22px;
       margin-bottom: 14px;
     }
 
     h2 {
-      font-size: 15px;
+      font-size: 16px;
       font-weight: 700;
-      color: #2563eb;
+      color: var(--accent-hover);
       margin-top: 0;
       margin-bottom: 10px;
-      border-bottom: 2px solid #eff6ff;
-      padding-bottom: 4px;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 6px;
     }
 
     p {
       margin: 0 0 10px 0;
       font-size: 13.5px;
-      color: #334155;
+      color: var(--text-color);
     }
 
-    p:last-child {
-      margin-bottom: 0;
-    }
+    p:last-child { margin-bottom: 0; }
 
-    /* Dual Image Teaser Frame */
+    /* Media Showcase */
     .media-box-dual {
-      background: #f1f5f9;
+      background: var(--card-inner);
+      border: 1px solid var(--border-color);
       border-radius: 10px;
       padding: 14px;
       margin: 12px 0;
@@ -130,30 +148,31 @@
       max-width: 45%;
       object-fit: contain;
       border-radius: 8px;
-      background: #ffffff;
+      background: var(--card-bg);
       padding: 6px;
-      border: 1px solid #e2e8f0;
+      border: 1px solid var(--border-color);
     }
 
     .banner-img {
       width: 100%;
-      max-height: 75px;
+      max-height: 85px;
       object-fit: contain;
       margin: 8px 0 12px 0;
     }
 
     .caption {
       font-size: 11.5px;
-      color: #64748b;
+      color: var(--subtext-color);
       margin-top: 8px;
       font-weight: 500;
     }
 
-    /* Feature Box */
+    /* Feature List Box */
     .block-box {
-      background: #f0fdf4;
-      border: 1px solid #bbf7d0;
-      border-radius: 10px;
+      background: var(--card-inner);
+      border: 1px solid var(--border-color);
+      border-left: 3px solid var(--accent-color);
+      border-radius: 8px;
       padding: 14px 18px;
       margin: 12px 0;
     }
@@ -161,7 +180,7 @@
     .block-title {
       font-size: 13px;
       font-weight: 700;
-      color: #166534;
+      color: var(--accent-hover);
       margin-bottom: 6px;
       text-transform: uppercase;
       letter-spacing: 0.03em;
@@ -171,116 +190,35 @@
       margin: 0;
       padding-left: 20px;
       font-size: 13.5px;
-      color: #14532d;
+      color: var(--text-color);
     }
 
-    .block-list li {
-      margin-bottom: 4px;
-    }
+    .block-list li { margin-bottom: 4px; }
 
-    /* Personal Note Card */
+    /* Author Footer Card */
     .footer-card {
-      background: #fff7ed;
-      border: 1px solid #ffedd5;
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-top: 2px solid var(--accent-color);
       border-radius: 12px;
       padding: 18px 22px;
     }
 
     .author {
       font-weight: 700;
-      color: #c2410c;
+      color: var(--accent-hover);
       font-size: 15px;
       margin-top: 10px;
-    }
-
-    /* Automatic Dark Theme Overrides */
-    @media (prefers-color-scheme: dark) {
-      body {
-        background-color: #0f172a;
-        color: #cbd5e1;
-      }
-
-      .header {
-        background: #1e293b;
-        border-color: #334155;
-      }
-
-      .header-logo {
-        background: #0f172a;
-        border-color: #334155;
-      }
-
-      .header-title {
-        color: #60a5fa;
-      }
-
-      .header-sub {
-        color: #93c5fd;
-      }
-
-      .header-tag {
-        background: #1e3a8a;
-        color: #bfdbfe;
-      }
-
-      .card {
-        background: #1e293b;
-        border-color: #334155;
-      }
-
-      h2 {
-        color: #60a5fa;
-        border-bottom-color: #334155;
-      }
-
-      p {
-        color: #cbd5e1;
-      }
-
-      .media-box-dual {
-        background: #0f172a;
-      }
-
-      .teaser-grid img {
-        background: #1e293b;
-        border-color: #334155;
-      }
-
-      .caption {
-        color: #94a3b8;
-      }
-
-      .block-box {
-        background: #064e3b;
-        border-color: #047857;
-      }
-
-      .block-title {
-        color: #6ee7b7;
-      }
-
-      .block-list {
-        color: #a7f3d0;
-      }
-
-      .footer-card {
-        background: #451a03;
-        border-color: #78350f;
-      }
-
-      .footer-card p {
-        color: #fed7aa;
-      }
-
-      .author {
-        color: #fb923c;
-      }
     }
   </style>
 </head>
 <body>
 
   <div class="container">
+
+    <div class="top-nav">
+      <a href="devlogs.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Back to Devlogs</a>
+    </div>
 
     <!-- Header Section -->
     <div class="header">
@@ -302,7 +240,6 @@
         I had a plan to make a new mini mod that is independent from Create: Beyond Limits, and yet I stopped almost at the finish line after crashing out on the entity's behavior.
       </p>
 
-      <!-- Side-by-side Teaser Showcase -->
       <div class="media-box-dual">
         <div class="teaser-grid">
           <img src="icon.png" alt="Companions From Beyond Teaser">
@@ -318,21 +255,20 @@
     <div class="card">
       <h2>Upcoming Updates (2.0.0 & 2.5.0)</h2>
       
-      <!-- Thermal Heating Banner -->
       <img src="title2.0.0_minimised.png" alt="Thermal Heating Banner" class="banner-img">
 
       <p>
-        It's September at the time I am writing this, and I have also revealed the next update (2.0.0) Thermal Heating with it's logical sequel: Thermal Cooling (2.5.0).
+        It's September at the time I am writing this, and I have also revealed the next update (2.0.0) with its logical sequel: Thermal Heating & Thermal Cooling (the 2.0.0 & 2.5.0 updates).
       </p>
       <p>
         As for what I was planning, I planned to release the update to the public (2.0.0) at the end of the month. But as always, code block hits, code stops functioning, I stop thinking straight and start making garbage.
       </p>
       <p>
-        As of 09/09/26, the main structure of the update has been made; from textures, models, and recipes to fluid transfer and the Conductor, which is the main block of the update. Yet systems are not fully functional: branching isn't working as intended, conductors bug out and crash the game in specific scenarios. I don't want to rush the update and yet I don't want to take a lot of time on it. In addition, school is starting 09/15/26, which is going to slow down the process even more.
+        As of 09/09/26, the main structure of the update has been made—from textures, models, and recipes to fluid transfer and the Conductor, which is the main block of the update. Yet systems are not fully functional: branching isn't working as intended, conductors bug out and crash the game in specific scenarios. I don't want to rush the update and yet I don't want to take a lot of time on it. In addition, school is starting 09/15/26, which is going to slow down the process even more.
       </p>
 
       <div class="block-box">
-        <div class="block-title">Revealed Blocks in the teased BANNER</div>
+        <div class="block-title">Revealed Blocks in Title</div>
         <ul class="block-list">
           <li>Thermal Conductor</li>
           <li>Thermal Pipes</li>
@@ -344,7 +280,7 @@
     <!-- Personal Note -->
     <div class="footer-card">
       <p>
-        I will and always apologize for my absence and the update delays, although it's not under my control, as I am a human being that stresses, gets sick, has a family to spend time with, and a teenager that has school, social life, and headaches all the time.
+        I will and always apologize for my absence and the update delays, although it's not under my hands to handle, as I am a human being that stresses, gets sick, has a family to spend time with, and a teenager that gets mood swings and headaches all the time.
       </p>
       <p style="margin-top: 10px;">
         I thank you all for your support and affection by downloading my mod.
