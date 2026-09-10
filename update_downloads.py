@@ -16,7 +16,7 @@ total_downloads = mr_count + cf_count
 print(f"Total downloads fetched: {total_downloads}")
 
 # 3. MediaWiki API Config (REPLACE WITH YOUR WIKI API URL)
-WIKI_API = 'https://YOUR_WIKI_DOMAIN/w/api.php'
+WIKI_API = 'https://beyondlimits.miraheze.org/w/api.php'
 
 session = requests.Session()
 
