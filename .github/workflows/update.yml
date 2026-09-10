@@ -1,0 +1,27 @@
+name: Update Wiki Download Counter
+
+on:
+  schedule:
+    - cron: '0 */6 * * *' # Runs automatically every 6 hours
+  workflow_dispatch: # Allows manual trigger from GitHub Actions tab
+
+jobs:
+  run-bot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run script
+        env:
+          WIKI_USER: ${{ secrets.WIKI_USER }}
+          WIKI_PASS: ${{ secrets.WIKI_PASS }}
+        run: python update_downloads.py
