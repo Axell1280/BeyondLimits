@@ -1,10 +1,9 @@
-$(document).ready(function() {
-    var $target = $('#total-downloads');
-    if (!$target.length) return;
+document.addEventListener('DOMContentLoaded', function() {
+    var target = document.getElementById('total-downloads');
+    if (!target) return;
 
-    var jsonUrl = 'https://cdn.jsdelivr.net/gh/Axell1280/BeyondLimits@main/downloads.json';
-
-    fetch(jsonUrl)
+    // Relative fetch works automatically when index.html and downloads.json are in the same GitHub repo
+    fetch('downloads.json')
         .then(function(res) { return res.json(); })
         .then(function(data) {
             if (data && typeof data.total === 'number' && data.total > 0) {
