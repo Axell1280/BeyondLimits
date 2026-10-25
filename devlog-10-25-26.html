@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create: Beyond Limits - Update 2.0.0 Devlog</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --bg-color: #121316;
+      --card-bg: #1c1e24;
+      --card-inner: #16181d;
+      --accent-color: #e07a5f;
+      --accent-hover: #f4a261;
+      --text-color: #e0e1dd;
+      --subtext-color: #a0a5b1;
+      --border-color: #2e323b;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      color: var(--text-color);
+      background-color: var(--bg-color);
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px 16px;
+    }
+
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    /* Top Navigation */
+    .top-nav {
+      margin-bottom: 20px;
+    }
+
+    .back-btn {
+      color: var(--subtext-color);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+
+    .back-btn:hover {
+      color: var(--accent-hover);
+    }
+
+    /* Header Box */
+    .header {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      padding: 18px 22px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 16px;
+    }
+
+    .header-logo {
+      width: 90px;
+      height: 90px;
+      object-fit: contain;
+      border-radius: 10px;
+      background: var(--card-inner);
+      padding: 4px;
+      border: 1px solid var(--border-color);
+    }
+
+    .header-info { flex: 1; }
+
+    .header-title {
+      font-size: 24px;
+      font-weight: 800;
+      margin: 0 0 2px 0;
+      color: var(--accent-hover);
+    }
+
+    .header-sub {
+      font-size: 14px;
+      color: var(--text-color);
+      font-weight: 600;
+    }
+
+    .header-tag {
+      display: inline-block;
+      background: #e07a5f22;
+      color: var(--accent-color);
+      border: 1px solid var(--accent-color);
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 12px;
+      margin-top: 6px;
+    }
+
+    /* Cards */
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 18px 22px;
+      margin-bottom: 14px;
+    }
+
+    h2 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--accent-hover);
+      margin-top: 0;
+      margin-bottom: 10px;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 6px;
+    }
+
+    p {
+      margin: 0 0 10px 0;
+      font-size: 13.5px;
+      color: var(--text-color);
+    }
+
+    p:last-child { margin-bottom: 0; }
+
+    /* Media Showcase */
+    .media-box-dual {
+      background: var(--card-inner);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 14px;
+      margin: 12px 0;
+      text-align: center;
+    }
+
+    .banner-img {
+      width: 100%;
+      max-height: 120px;
+      object-fit: contain;
+      margin: 8px 0 12px 0;
+    }
+
+    .spoiler-img {
+      max-width: 100%;
+      max-height: 220px;
+      object-fit: contain;
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+    }
+
+    .caption {
+      font-size: 11.5px;
+      color: var(--subtext-color);
+      margin-top: 8px;
+      font-weight: 500;
+    }
+
+    /* Feature List Box */
+    .block-box {
+      background: var(--card-inner);
+      border: 1px solid var(--border-color);
+      border-left: 3px solid var(--accent-color);
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin: 12px 0;
+    }
+
+    .block-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--accent-hover);
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    .block-list {
+      margin: 0;
+      padding-left: 20px;
+      font-size: 13.5px;
+      color: var(--text-color);
+    }
+
+    .block-list li { margin-bottom: 4px; }
+
+    /* Author Footer Card */
+    .footer-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-top: 2px solid var(--accent-color);
+      border-radius: 12px;
+      padding: 18px 22px;
+    }
+
+    .author {
+      font-weight: 700;
+      color: var(--accent-hover);
+      font-size: 15px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="top-nav">
+      <a href="devlogs.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Back to Devlogs</a>
+    </div>
+
+    <!-- Header Section -->
+    <div class="header">
+      <img src="https://cdn.modrinth.com/data/cached_images/35cd431a79354d7bf64256732329f909af01d9dd.png" alt="Create: Beyond Limits Icon" class="header-logo">
+      <div class="header-info">
+        <h1 class="header-title">Create: Beyond Limits</h1>
+        <div class="header-sub">Update 2.0.0 — Thermal Heating</div>
+        <span class="header-tag">Devlog — Release Notes</span>
+      </div>
+    </div>
+
+    <!-- Overview Card -->
+    <div class="card">
+      <h2><i class="fa-solid fa-fire"></i> Update Overview</h2>
+      <img src="https://cdn.modrinth.com/data/cached_images/6da0fcbb7cebbc5ce269e042578d601b51cb339a.png" alt="Thermal Heating Header" class="banner-img">
+      <p>
+        Thermal Heating is officially here! This major update introduces a brand-new mechanical heat distribution system, 4 new functional blocks, complex thermal mechanics to automate, and 8 unique advancements to complete.
+      </p>
+    </div>
+
+    <!-- Features Card -->
+    <div class="card">
+      <h2><i class="fa-solid fa-cubes"></i> Features & Advancements</h2>
+      <p>
+        The core mechanism revolves around managing fluid temperature, heat line loss, and routing thermal energy across your factory setups.
+      </p>
+
+      <div class="block-box">
+        <div class="block-title">New Thermal Blocks</div>
+        <ul class="block-list">
+          <li><strong>Thermal Siphon Drain</strong></li>
+          <li><strong>Thermal Pipes</strong></li>
+          <li><strong>Thermal Conductor</strong></li>
+          <li><strong>Thermal Outflow</strong></li>
+        </ul>
+      </div>
+
+      <div class="block-box">
+        <div class="block-title">New System Advancements</div>
+        <ul class="block-list">
+          <li>"Heat, Meet Machine"</li>
+          <li>"Closing the Loop"</li>
+          <li>"Branch Manager"</li>
+          <li>"All Back to One"</li>
+          <li>"Line Loss"</li>
+          <li>"Wide Open Throttle"</li>
+          <li>"Borrowed Warmth"</li>
+          <li>"Scorched Earth"</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Notes & Sequel Teaser Card -->
+    <div class="card">
+      <h2><i class="fa-solid fa-triangle-exclamation"></i> Beta Notes & Future Teaser</h2>
+      <p>
+        This version is currently in <strong>Beta</strong>. Expect minor bugs! The Thermal Conductor currently has a known visual/model issue that will be resolved in upcoming hotfix patch updates.
+      </p>
+
+      <div class="media-box-dual">
+        <img src="https://cdn.modrinth.com/data/cached_images/945230ce9fd861a2b097e56e657b650205050159.png" alt="Thermal Sequel 2.5.0 Teaser" class="spoiler-img">
+        <div class="caption">
+          A sneak peek at what is coming next in the 2.5.0 Thermal Sequel update!
+        </div>
+      </div>
+    </div>
+
+    <!-- Author Footer Card -->
+    <div class="footer-card">
+      <p>
+        Thank you all so much for your patience, support, and for playing Create: Beyond Limits!
+      </p>
+      <div class="author">Axell</div>
+    </div>
+
+  </div>
+
+</body>
+</html>
